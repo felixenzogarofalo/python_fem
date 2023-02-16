@@ -9,4 +9,5 @@ En este primer módulo estableceremos los fundamentos que nos permitirán entend
 ## Elementos Creados (hasta ahora)
 - Elemento tipo resorte
 - Elemento tipo viga Euler-Bernoulli
-- Elemtento Triangular de Deformación Constante (TDC)
+- Elemento Triangular de Deformación Constante (TDC)
+- Elemento isoparamétrico de cuatro nodos
