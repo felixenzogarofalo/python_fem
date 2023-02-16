@@ -7,4 +7,4 @@ Created on Tue Feb  7 10:57:41 2023
 
 from setuptools import setup, find_packages
 
-setup(name = "elementos", packages = find_packages())
+setup(name = "elementos", packages = find_packages("elementos"))

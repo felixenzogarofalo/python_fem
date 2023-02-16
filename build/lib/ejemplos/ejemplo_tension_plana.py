@@ -14,7 +14,7 @@ Donde:
 @author: Felix Enzo Garofalo Lanzuisi
 """
 import numpy as np
-from elemento_tdc import Elemento_TDC
+from elementos.elemento_tdc import Elemento_TDC
 
 
 # Variables de entrada

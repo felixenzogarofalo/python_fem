@@ -22,7 +22,7 @@ Donde:
 @author: Felix Enzo Garofalo Lanzuisi
 """
 import numpy as np
-from viga_euler_bernoulli import VigaEB
+from elementos.viga_euler_bernoulli import VigaEB
 from matplotlib import pyplot as plt
 
 # Variables de entrada

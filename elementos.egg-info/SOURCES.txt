@@ -2,11 +2,13 @@ LICENSE
 README.md
 setup.py
 ejemplos/__init__.py
+ejemplos/ejemplo_isoparametrico.py
 ejemplos/ejemplo_resortes.py
 ejemplos/ejemplo_tension_plana.py
 ejemplos/ejemplo_vigas_eb.py
 elementos/__init__.py
 elementos/elemento_tdc.py
+elementos/isoparametrico_cuad.py
 elementos/resorte.py
 elementos/viga_euler_bernoulli.py
 elementos.egg-info/PKG-INFO
