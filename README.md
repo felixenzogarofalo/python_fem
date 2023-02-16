@@ -7,8 +7,8 @@ Este es un repositorio para las clases desarrolladas en el módulo 01 de la **Es
 
 1. Clone este respositorio en su ordenador
 2. En la carpeta raiz del proyecto ejecute en una terminal el comando 
-'''python:
-    python setup.py install
+'''
+python setup.py install
 '''
 
 ## Módulo 1 – Teoría y programación básica de elementos finitos
