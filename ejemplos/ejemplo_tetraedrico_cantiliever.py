@@ -14,7 +14,7 @@ Donde:
 """
 import matplotlib.pyplot as plt
 import numpy as np
-from elementos.tetraedrico_4n import Tetraedro_4n as tetra
+from tetraedrico_4n import Tetraedro_4n as tetra
 
 # Variables de entrada
 gdl = 8                         # Número de grados de libertad por elemento
@@ -42,16 +42,16 @@ nodos = [nodo_1, nodo_2, nodo_3, nodo_4, nodo_5, nodo_6,
 
 
 # Crear elemeentos
-ele_1 = tetra(1, 1, 2, 3, 6, nodo_1, nodo_2, nodo_3, nodo_6, E, poisson)
-ele_2 = tetra(2, 1, 3, 4, 8, nodo_1, nodo_3, nodo_4, nodo_8, E, poisson)
-ele_3 = tetra(3, 3, 6, 7, 8, nodo_3, nodo_6, nodo_7, nodo_8, E, poisson)
+ele_1 = tetra(1, 1, 2, 4, 5, nodo_1, nodo_2, nodo_4, nodo_5, E, poisson)
+ele_2 = tetra(2, 2, 4, 5, 7, nodo_2, nodo_4, nodo_5, nodo_7, E, poisson)
+ele_3 = tetra(3, 2, 3, 4, 7, nodo_2, nodo_3, nodo_4, nodo_7, E, poisson)
 ele_4 = tetra(4, 1, 6, 5, 8, nodo_1, nodo_6, nodo_5, nodo_8, E, poisson)
-ele_5 = tetra(5, 1, 6, 8, 3, nodo_1, nodo_6, nodo_8, nodo_3, E, poisson)
-ele_6 = tetra(6, 2, 9, 10, 11, nodo_2, nodo_9, nodo_10, nodo_11, E, poisson)
-ele_7 = tetra(7, 2, 10, 3, 7, nodo_2, nodo_10, nodo_3, nodo_7, E, poisson)
-ele_8 = tetra(8, 10, 11, 12, 7, nodo_10, nodo_11, nodo_12, nodo_7, E, poisson)
-ele_9 = tetra(9, 2, 11, 6, 7, nodo_2, nodo_11, nodo_6, nodo_7, E, poisson)
-ele_10 = tetra(10, 2, 11, 7, 10, nodo_2, nodo_11, nodo_7, nodo_10, E, poisson)
+ele_5 = tetra(5, 4, 5, 7, 8, nodo_4, nodo_5, nodo_7, nodo_8, E, poisson)
+ele_6 = tetra(6, 2, 3, 6, 9, nodo_2, nodo_3, nodo_6, nodo_9, E, poisson)
+ele_7 = tetra(7, 3, 9, 10, 12, nodo_3, nodo_9, nodo_10, nodo_12, E, poisson)
+ele_8 = tetra(8, 3, 6, 9, 12, nodo_3, nodo_6, nodo_9, nodo_12, E, poisson)
+ele_9 = tetra(9, 3, 6, 7, 12, nodo_3, nodo_6, nodo_7, nodo_12, E, poisson)
+ele_10 = tetra(10, 6, 9, 11, 12, nodo_6, nodo_9, nodo_11, nodo_12, E, poisson)
 
 elementos = [ele_1, ele_2, ele_3, ele_4, ele_5,
              ele_6, ele_7, ele_8, ele_9, ele_10]
@@ -97,7 +97,7 @@ for elemento in elementos:
 # Establecer condiciones de borde
 # Condición de borde homogénea
 # Índices de los GDL restringidos
-soportes = [0, 1, 2, 3, 4, 5, 12, 13, 14, 21, 22, 23]
+soportes = [0, 1, 2, 9, 10, 11, 12, 13, 14, 21, 22, 23]
 
 # Reducir Matriz de Rigidez Global y vector de fuerza
 K_R = K_G
