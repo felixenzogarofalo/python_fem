@@ -127,7 +127,7 @@ class Tetraedro_4n:
 
         # Alfa 3
         alfa_3 = np.array([[self.x1, self.y1, self.z1],
-                           [self.x3, self.y3, self.z3],
+                           [self.x2, self.y2, self.z2],
                            [self.x4, self.y4, self.z4]])
         alfa_3 = np.linalg.det(alfa_3)
         self.alfa_3 = alfa_3
@@ -155,7 +155,7 @@ class Tetraedro_4n:
 
         # Alfa 4
         alfa_4 = np.array([[self.x1, self.y1, self.z1],
-                           [self.x3, self.y3, self.z3],
+                           [self.x2, self.y2, self.z2],
                            [self.x3, self.y3, self.z3]])
         alfa_4 = -np.linalg.det(alfa_4)
         self.alfa_4 = alfa_4
